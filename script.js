@@ -31,6 +31,7 @@ document.addEventListener("touchend",function(){
 
         // 02 level up
         levelUp();
+        console.log("hello");
     }
 })
 
@@ -103,7 +104,6 @@ function btnPree(){
 let allBtn = document.querySelectorAll(".btn");
 for(btn of allBtn){
     btn.addEventListener('click',btnPree);
-    btn.addEventListener('touchend',btnPree);
 }
 
 function reset(){
