@@ -23,6 +23,17 @@ document.addEventListener("keypress",function(){
     }
 })
 
+//for touch screens
+document.addEventListener("ontouchend",function(){
+    if(satred == false){
+        console.log("game started");
+        satred = true;
+
+        // 02 level up
+        levelUp();
+    }
+})
+
 function btnFlash(btn){
     btn.classList.add('flash');
     setTimeout(function(){
@@ -92,7 +103,7 @@ function btnPree(){
 let allBtn = document.querySelectorAll(".btn");
 for(btn of allBtn){
     btn.addEventListener('click',btnPree);
-
+    btn.addEventListener('ontouchend',btnPree);
 }
 
 function reset(){
