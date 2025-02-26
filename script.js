@@ -13,13 +13,15 @@ let h2 = document.querySelector('h2');
 
 
 // 01 game started
-document.addEventListener("keypress",function(){
-    if(satred == false){
-        console.log("game started");
-        satred = true;
-
-        // 02 level up
-        levelUp();
+document.addEventListener("keypress",function(event){
+    if (event.type == "touchend") {
+        if(satred == false){
+            console.log("game started");
+            satred = true;
+    
+            // 02 level up
+            levelUp();
+        }
     }
 })
 
