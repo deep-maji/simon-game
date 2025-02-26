@@ -24,7 +24,7 @@ document.addEventListener("keypress",function(){
 })
 
 //for touch screens
-document.addEventListener("ontouchend",function(){
+document.addEventListener("touchend",function(){
     if(satred == false){
         console.log("game started");
         satred = true;
@@ -103,7 +103,7 @@ function btnPree(){
 let allBtn = document.querySelectorAll(".btn");
 for(btn of allBtn){
     btn.addEventListener('click',btnPree);
-    btn.addEventListener('ontouchend',btnPree);
+    btn.addEventListener('touchend',btnPree);
 }
 
 function reset(){
