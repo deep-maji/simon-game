@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: red;
+    border: 5px solid black;
+    height: 20vw;
+    width: 20vw;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 20%;
+    margin: 1vw;
+}
+
+.yellow{
+    background-color: rgba(199, 199, 4, 0.814);
+}
+
+.red {
+    background-color: rgba(154, 9, 9, 0.819);
+}
+
+.green {
+    background-color: rgba(6, 157, 6, 0.726);
+}
+
+.purple {
+    background-color: rgba(177, 10, 177, 0.485);
+}
+
+.flash {
+    background-color: white;
+}
+
+.userFlash{
+    background-color: green;
+}
+
+.gameOver {
+    background-color: red;
+}
+
+.how-to {
+    margin-top: 100px;
+}
+
+.how-to iframe {
+    max-width: 560px;
+    max-height: 315px;
+    width: 90vw;
+    height: 315px;
+}
